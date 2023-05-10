@@ -1,7 +1,7 @@
 import java.lang.Thread.sleep
 
 fun main(){
-    val tune = arrayOf("♫ ♪ What is Log? ♫ ♪", "♫ ♪ Baby, dont hurt meee... ♫ ♪", "♫ ♪ Don't hurt meee... ♫ ♪", "♫ ♪ No mo-oore... ♫ ♪")
+    val tune = arrayOf("♫ ♪ What is Log? ♫ ♪\n", "♫ ♪ Baby, dont hurt meee... ♫ ♪\n", "♫ ♪ Don't hurt meee... ♫ ♪\n", "♫ ♪ No mo-oore... ♫ ♪\n")
     var num = 2147483648
     var tuneCounter = 0
     var counter = 1
@@ -11,10 +11,10 @@ fun main(){
             tuneCounter = 0
         }
         println(tune[tuneCounter])
-        println("$counter) $num")
+        println("$counter) $num\n")
         sleep(2000)
         counter += 1
         tuneCounter +=1
     }
-    println("♫ ♪ no mo-ore. ♫ ♪")
+    println("\n♫ ♪ no mo-ore. ♫ ♪\n")
 }
